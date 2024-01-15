@@ -169,7 +169,7 @@ function App() {
       </div>
 
       <div className="footer">
-        <div className="title" style={{ fontSize: '15px' }}>
+        <div className="title title-sm">
           This website is made using HTML, CSS, ReactJs, and TailWindCSS.
         </div>
         <div className="footerInfo">&copy; 2024 Weng Ni. All rights reserved.</div>
