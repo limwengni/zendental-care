@@ -1,0 +1,235 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.background {
+  background-color: #101217;
+  height: 100vh;
+  width: 100%;
+}
+
+.background2 {
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100%;
+}
+
+.outerCont {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Move the element 50 pixels to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Move the element back to its original position */
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s ease-out; /* Adjust the animation duration and easing as needed */
+}
+
+/******* 1ST CONTAINER *******/
+.container {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  column-gap: 4rem;
+  row-gap: 0.25rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  color: whitesmoke;
+}
+
+.leftPanel .intro {
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftPanel .introCont,
+.leftPanel .name {
+  font-size: 35px;
+}
+
+.leftPanel .name {
+  font-size: 40px;
+}
+
+.shortBio {
+  font-size: 18px;
+}
+
+.buttonCont {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.circle-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  border: none;
+  color: whitesmoke;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.circle-button:hover {
+  background-color: #f54966;
+}
+
+.circle-button:hover .icon {
+  color: whitesmoke;
+}
+
+.icon {
+  color: #101217;
+  font-size: 24px;
+}
+
+.profile {
+  border-radius: 150px;
+}
+
+.button {
+  position: relative;
+  margin-bottom: 30px;
+  color: whitesmoke;
+  font-size: 36px;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/******* END OF 1ST CONTAINER *******/
+
+/******* 2ND CONTAINER *******/
+.container2 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  column-gap: 4rem;
+  row-gap: 0.50rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.details {
+  font-weight: lighter;
+  font-size: 28px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.resume {
+  padding-top: 40px;
+}
+
+.roundedRect-button {
+  background-color: black;
+  color: whitesmoke;
+  text-decoration: none;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.roundedRect-button:hover {
+  background-color: #f54966;
+}
+
+/******* END OF 2ND CONTAINER *******/
+
+/******* 3RD CONTAINER *******/
+.skillTable {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.skill {
+  flex: 0 0 calc(20% - 2rem);
+  /* 20% of the container width with some margin */
+  margin: 1rem;
+  border: 2px solid #054387;
+  border-radius: 10px;
+  background-color: rgb(245, 245, 245);
+}
+
+.skillImage {
+  margin: 0 auto;
+  padding: 10px;
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  /* Ensure the image maintains its aspect ratio */
+}
+
+.skillText {
+  color: black;
+  text-align: center;
+  margin-top: 0.1rem;
+  padding-bottom: 10px;
+}
+
+/******* END OF 3RD CONTAINER *******/
+
+/******* FOOTER *******/
+.footer {
+  background-color: #101217;
+  padding: 30px;
+  color: whitesmoke;
+  text-align: center;
+}
