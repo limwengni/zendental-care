@@ -1347,7 +1347,6 @@ html {
     /* Move the image to the top in the column layout */
     width: 250px;
     height: 250px;
-    margin-top: -60px;
   }
 
   .leftPanel .intro {
@@ -1440,7 +1439,6 @@ html {
     /* Move the image to the top in the column layout */
     width: 300px;
     height: 300px;
-    margin-top: -60px;
   }
 
   .leftPanel .intro {
