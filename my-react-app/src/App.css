@@ -241,7 +241,7 @@ html {
   text-align: center;
 }
 
-.footer .title, .footer .footerInfo {
+.footer .title-sm, .footer .footerInfo {
   font-size: 15px;
 }
 
@@ -1047,7 +1047,7 @@ html {
     padding-bottom: 20px;
   }
 
-  .footer .title, .footer .footerInfo {
+  .footer .title-sm, .footer .footerInfo {
     font-size: 11px;
   }
 }
@@ -1165,7 +1165,7 @@ html {
     padding-bottom: 18px;
   }
 
-  .footer .title, .footer .footerInfo {
+  .footer .title-sm, .footer .footerInfo {
     font-size: 9px;
   }
 }
@@ -1248,7 +1248,7 @@ html {
     padding-bottom: 16px;
   }
 
-  .footer .title, .footer .footerInfo {
+  .footer .title-sm, .footer .footerInfo {
     font-size: 7px;
   }
 }

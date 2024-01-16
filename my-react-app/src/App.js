@@ -169,7 +169,7 @@ function App() {
       </div>
 
       <div className="footer">
-        <div className="title title-sm">
+        <div className="title-sm">
           This website is developed using HTML, CSS, ReactJs, and Tailwind CSS.
         </div>
         <div className="footerInfo title-sm">
