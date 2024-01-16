@@ -235,19 +235,20 @@ html {
 /******* FOOTER *******/
 .footer {
   background-color: #101217;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: whitesmoke;
   text-align: center;
 }
 
-.footer .title{
+.footer .title, .footer .footerInfo {
   font-size: 15px;
 }
 
 
 /** RESPONSIVE **/
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1920px) {
   .container {
     flex-direction: row;
     display: flex;
@@ -364,15 +365,15 @@ html {
     height: 55px;
     border-radius: 10px;
     border: none;
-    font-size: 24px;
+    font-size: 25px;
     text-align: center;
-    line-height: 50px;
+    line-height: 55px;
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .container {
     flex-direction: row;
     display: flex;
@@ -518,22 +519,22 @@ html {
   }
 
   .leftPanel .intro {
-    font-size: 30px;
+    font-size: 32px;
     display: flex;
     flex-direction: column;
   }
 
   .leftPanel .introCont,
   .leftPanel .name {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .leftPanel .name {
-    font-size: 35px;
+    font-size: 37px;
   }
 
   .shortBio {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .buttonCont {
@@ -550,7 +551,7 @@ html {
     background-color: whitesmoke;
     border: none;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     line-height: 50px;
     text-decoration: none;
@@ -559,13 +560,13 @@ html {
 
   .icon {
     color: #101217;
-    font-size: 25px;
+    font-size: 26px;
   }
 
   .profile {
     border-radius: 150px;
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
   }
 
   .button {
@@ -589,12 +590,62 @@ html {
   }
 
   .title {
-    font-size: 33px;
+    font-size: 32px;
   }
 
   .details {
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+    text-align: justify;
+  }
+
+  .resume {
+    padding-top: 24px;
+  }
+
+  .roundedRect-button {
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 21px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .skillTable{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .skill {
+    flex: 0 0 calc(30% - 2rem);
+    /* 20% of the container width with some margin */
+    margin: 1rem;
+    border: 2px solid #054387;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+  }
+
+}
+
+@media only screen and (max-width: 740px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .details {
+    font-weight: lighter;
+    font-size: 22px;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 35px;
@@ -610,29 +661,121 @@ html {
     color: whitesmoke;
     text-decoration: none;
     display: inline-block;
-    width: 200px;
+    width: 230px;
     height: 50px;
     border-radius: 10px;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     line-height: 50px;
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease;
   }
 
-  .skill {
-    flex: 0 0 calc(30% - 2rem);
-    /* 20% of the container width with some margin */
-    margin: 1rem;
-    border: 2px solid #054387;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .details {
+    font-weight: lighter;
+    font-size: 21px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+    text-align: justify;
+  }
+
+  .resume {
+    padding-top: 18px;
+  }
+
+  .roundedRect-button {
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    width: 210px;
+    height: 50px;
     border-radius: 10px;
-    background-color: rgb(245, 245, 245);
+    border: none;
+    font-size: 19px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 
 }
 
-@media only screen and (max-width: 551px) {
+@media only screen and (max-width: 650px) {
+  .profile {
+    width: 180px;
+    height: 180px;
+  }
+
+  .leftPanel .intro {
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftPanel .introCont,
+  .leftPanel .name {
+    font-size: 26px;
+  }
+
+  .leftPanel .name {
+    font-size: 30px;
+  }
+
+  .shortBio {
+    font-size: 14px;
+  }
+
+  .circle-button {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .icon {
+    color: #101217;
+    font-size: 20px;
+  }
+
+  .details {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+    text-align: justify;
+  }
+
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .footer .title, .footer .footerInfo {
+    font-size: 13px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -642,8 +785,8 @@ html {
   .profile {
     order: -1;
     /* Move the image to the top in the column layout */
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     margin-top: -80px;
   }
 
@@ -655,14 +798,14 @@ html {
   }
 
   .leftPanel .intro {
-    font-size: 25px;
+    font-size: 26px;
     display: flex;
     flex-direction: column;
   }
 
   .leftPanel .introCont,
   .leftPanel .name {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   .leftPanel .name {
@@ -670,7 +813,11 @@ html {
   }
 
   .shortBio {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .blinkingCursor{
+    display: none;
   }
 
   .buttonCont {
@@ -681,15 +828,15 @@ html {
 
   .circle-button {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: whitesmoke;
     border: none;
     color: whitesmoke;
     font-size: 20px;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease;
   }
@@ -714,16 +861,15 @@ html {
     padding-left: 20px;
     padding-right: 20px;
     margin: 5px;
-    margin-top: -20px;
   }
 
   .title {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .details {
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 35px;
@@ -731,7 +877,7 @@ html {
   }
 
   .resume {
-    padding-top: 30px;
+    padding-top: 35px;
   }
 
   .roundedRect-button {
@@ -739,11 +885,11 @@ html {
     color: whitesmoke;
     text-decoration: none;
     display: inline-block;
-    width: 180px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     border: none;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     line-height: 50px;
     text-decoration: none;
@@ -778,6 +924,98 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile {
+    order: -1;
+    /* Move the image to the top in the column layout */
+    width: 140px;
+    height: 140px;
+    margin-top: -50px;
+  }
+
+  .leftPanel .intro {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftPanel .introCont,
+  .leftPanel .name {
+    font-size: 24px;
+  }
+
+  .leftPanel .name {
+    font-size: 26px;
+  }
+
+  .shortBio {
+    font-size: 12px;
+  }
+
+  .buttonCont {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .circle-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    border: none;
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .icon {
+    color: #101217;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .details {
+    font-weight: lighter;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+    text-align: justify;
+  }
+
+  .resume {
+    padding-top: 18px;
+  }
+
+  .roundedRect-button {
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
   .skill {
     flex: 0 0 calc(40% - 2rem);
     /* 20% of the container width with some margin */
@@ -805,16 +1043,97 @@ html {
   }
 
   .footer {
-    padding: 20px;
-    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-  .footer .title{
-    font-size: 10px;
+  .footer .title, .footer .footerInfo {
+    font-size: 11px;
   }
 }
 
 @media only screen and (max-width: 450px) {
+  .profile {
+    order: -1;
+    /* Move the image to the top in the column layout */
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+  }
+
+  .leftPanel .intro {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftPanel .introCont,
+  .leftPanel .name {
+    font-size: 22px;
+  }
+
+  .leftPanel .name {
+    font-size: 24px;
+  }
+
+  .shortBio {
+    font-size: 10px;
+  }
+
+  .circle-button {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    border: none;
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .icon {
+    color: #101217;
+    font-size: 18px;
+  }
+
+
+  .title {
+    font-size: 28px;
+  }
+
+  .details {
+    font-weight: lighter;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+    text-align: justify;
+  }
+
+  .resume {
+    padding-top: 18px;
+  }
+
+  .roundedRect-button {
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
   .skill {
     flex: 0 0 calc(50% - 2rem);
     /* 20% of the container width with some margin */
@@ -842,11 +1161,12 @@ html {
   }
 
   .footer {
-    font-size: 8px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
-  .footer .title{
-    font-size: 8px;
+  .footer .title, .footer .footerInfo {
+    font-size: 9px;
   }
 }
 
@@ -865,12 +1185,12 @@ html {
   }
 
   .title {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .details {
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 35px;
@@ -886,19 +1206,19 @@ html {
     color: whitesmoke;
     text-decoration: none;
     display: inline-block;
-    width: 150px;
-    height: 50px;
+    width: 180px;
+    height: 45px;
     border-radius: 10px;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease;
   }
 
   .skill {
-    flex: 0 0 calc(90% - 1.5rem);
+    flex: 0 0 calc(50% - 2rem);
     /* 20% of the container width with some margin */
     margin: 1rem;
     border: 2px solid #054387;
@@ -922,4 +1242,285 @@ html {
     padding-bottom: 10px;
     font-size: 10px;
   }
+
+  .footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .footer .title, .footer .footerInfo {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .button {
+    position: relative;
+    padding-top: 15px ;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: 30px;
+  }
+
+  .container2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    column-gap: 4rem;
+    row-gap: 0.50rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .details {
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  .resume {
+    padding-top: 18px;
+  }
+
+  .roundedRect-button {
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .skill {
+    flex: 0 0 calc(50% - 2rem);
+    /* 20% of the container width with some margin */
+    margin: 1rem;
+    border: 2px solid #054387;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .skillImage {
+    margin: 0 auto;
+    padding: 10px;
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    /* Ensure the image maintains its aspect ratio */
+  }
+
+  .skillText {
+    color: black;
+    text-align: center;
+    margin-top: 0.1rem;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-height: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile {
+    order: -1;
+    /* Move the image to the top in the column layout */
+    width: 250px;
+    height: 250px;
+    margin-top: -60px;
+  }
+
+  .leftPanel .intro {
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftPanel .introCont,
+  .leftPanel .name {
+    font-size: 36px;
+  }
+
+  .leftPanel .name {
+    font-size: 42px;
+  }
+
+  .shortBio {
+    font-size: 22px;
+  }
+
+  .blinkingCursor{
+    display: none;
+  }
+
+  .circle-button {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    border: none;
+    color: whitesmoke;
+    font-size: 36px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .icon {
+    color: #101217;
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .details {
+    font-weight: lighter;
+    font-size: 28px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 36px;
+    text-align: justify;
+  }
+
+  .resume {
+    padding-top: 35px;
+  }
+
+  .roundedRect-button {
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    width: 320px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    font-size: 28px;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+}
+
+@media only screen and (min-height: 1500px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile {
+    order: -1;
+    /* Move the image to the top in the column layout */
+    width: 300px;
+    height: 300px;
+    margin-top: -60px;
+  }
+
+  .leftPanel .intro {
+    font-size: 44px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftPanel .introCont,
+  .leftPanel .name {
+    font-size: 44px;
+  }
+
+  .leftPanel .name {
+    font-size: 48px;
+  }
+
+  .shortBio {
+    font-size: 25px;
+  }
+
+  .blinkingCursor{
+    display: none;
+  }
+
+  .circle-button {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    border: none;
+    color: whitesmoke;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .icon {
+    color: #101217;
+    font-size: 40px;
+  }
+
+  .button{
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .details {
+    font-weight: lighter;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    text-align: justify;
+  }
+
+  .resume {
+    padding-top: 35px;
+  }
+
+  .roundedRect-button {
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    width: 340px;
+    height: 90px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    line-height: 90px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
 }

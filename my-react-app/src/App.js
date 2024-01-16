@@ -65,7 +65,7 @@ const BlinkingCursor = () => {
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
   }, []);
 
-  return <span>{isVisible ? '|' : ' '}</span>;
+  return <span className="blinkingCursor">{isVisible ? '|' : ' '}</span>;
 };
 
 function App() {
@@ -141,7 +141,7 @@ function App() {
             About Me
           </div>
           <div className="details">
-            I am a <span class="font-medium" style={{color:'#f54966'}}>second-year</span> degree student studying <span class="font-medium">Software System Development </span>
+            I am a <span class="font-medium" style={{ color: '#f54966' }}>second-year</span> degree student studying <span class="font-medium">Software System Development </span>
             at Tunku Abdul Rahman University of Management and Technology (TARUMT).
             With a passion for Full-Stack Development, I have actively pursued opportunities
             to enhance my skills. After completing my degree, I aspire to become a Full-Stack developer.
@@ -153,7 +153,7 @@ function App() {
       </div>
 
       <div className="background" style={{ height: '100%', background: 'linear-gradient(to right, #2a79d1, #845bbd)' }}>
-        <div className="container2" style={{ margin: '35px' }}>
+        <div className="container2" style={{ marginTop: '35px' }}>
           <div className="title text-whitesmoke">
             Skills & Abilities
           </div>
@@ -170,10 +170,14 @@ function App() {
 
       <div className="footer">
         <div className="title title-sm">
-          This website is made using HTML, CSS, ReactJs, and TailWindCSS.
+          This website is developed using HTML, CSS, ReactJs, and Tailwind CSS.
         </div>
-        <div className="footerInfo">&copy; 2024 Weng Ni. All rights reserved.</div>
+        <div className="footerInfo title-sm">
+          &copy; {new Date().getFullYear()} Weng Ni. All rights reserved.
+        </div>
       </div>
+
+
     </div>
   );
 }
