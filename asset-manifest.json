@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/zendental-care/static/css/main.4e974f69.css",
+    "main.js": "/zendental-care/static/js/main.1cf8cc29.js",
+    "static/js/787.ea3248b4.chunk.js": "/zendental-care/static/js/787.ea3248b4.chunk.js",
+    "static/media/familySmile.jpg": "/zendental-care/static/media/familySmile.bd669d59e9ffc082297c.jpg",
+    "static/media/img1.jpg": "/zendental-care/static/media/img1.76919ae22ee9e1b07c42.jpg",
+    "static/media/tooth.svg": "/zendental-care/static/media/tooth.c9bafa44addad946ca07356a567b6c01.svg",
+    "index.html": "/zendental-care/index.html",
+    "main.4e974f69.css.map": "/zendental-care/static/css/main.4e974f69.css.map",
+    "main.1cf8cc29.js.map": "/zendental-care/static/js/main.1cf8cc29.js.map",
+    "787.ea3248b4.chunk.js.map": "/zendental-care/static/js/787.ea3248b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e974f69.css",
+    "static/js/main.1cf8cc29.js"
+  ]
+}
