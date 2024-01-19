@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  background-color: #1681a8;
+  color: whitesmoke;
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+}
+
+.my-navigation {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-navigation li {
+  margin-right: 20px;
+  /* Adjust the spacing between menu items as needed */
+  position: relative;
+}
+
+.my-navigation a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+.my-navigation .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1681a8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  /* Position the dropdown content below the parent item */
+  left: 0;
+}
+
+.my-navigation li:hover .dropdown-content {
+  display: block;
+}
+
+.my-navigation .dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.my-navigation .dropdown-content a:hover {
+  background-color: black;
+  color: #f9f9f9;
+}
+
+.visible {
+  display: block !important;
+}
+
+/* Adjust the breakpoint to your needs */
+@media (max-width: 767px) {
+  .my-navigation {
+    flex-direction: column;
+    /* Change to column for mobile */
+  }
+
+  .my-navigation li {
+    margin-right: 0;
+    /* Remove right margin for mobile */
+  }
+
+  .my-navigation .dropdown-content {
+    position: static;
+    /* Remove absolute positioning for mobile */
+    display: none;
+  }
+
+  .my-navigation li:hover .dropdown-content {
+    display: block;
+    /* Show content on hover for mobile */
+  }
+
+  .hidden {
+    display: none !important;
+  }
+}
+
+.container {
+  position: relative;
+  height: 70vh;
+  width: auto;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./familySmile.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.introduction {
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.8);
+  height: 70vh;
+}
+
+@media (max-width: 640px) {
+  .introduction {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .xs-intro {
+    font-size: 18px;
+  }
+
+  .xs-intro2 {
+    font-size: 12px;
+  }
+
+  .extraIntro{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-height: 1000px) {
+  .introduction{
+    padding-top: 170px;
+  }
+
+  .intro1-1k{
+
+  }
+
+  .intro2-1k{
+
+  }
+}
+
+@media only screen and (min-height: 1999px) {
+  .intro1-2k{
+
+  }
+
+  .intro2-2k{
+
+  }
+}
