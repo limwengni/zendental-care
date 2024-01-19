@@ -1,18 +1,31 @@
 {
   "files": {
-    "main.css": "/zendental-care/static/css/main.4e974f69.css",
-    "main.js": "/zendental-care/static/js/main.1cf8cc29.js",
-    "static/js/787.ea3248b4.chunk.js": "/zendental-care/static/js/787.ea3248b4.chunk.js",
-    "static/media/familySmile.jpg": "/zendental-care/static/media/familySmile.bd669d59e9ffc082297c.jpg",
-    "static/media/img1.jpg": "/zendental-care/static/media/img1.76919ae22ee9e1b07c42.jpg",
-    "static/media/tooth.svg": "/zendental-care/static/media/tooth.c9bafa44addad946ca07356a567b6c01.svg",
-    "index.html": "/zendental-care/index.html",
-    "main.4e974f69.css.map": "/zendental-care/static/css/main.4e974f69.css.map",
-    "main.1cf8cc29.js.map": "/zendental-care/static/js/main.1cf8cc29.js.map",
-    "787.ea3248b4.chunk.js.map": "/zendental-care/static/js/787.ea3248b4.chunk.js.map"
+    "main.css": "/portfolioSite/static/css/main.526d6a98.css",
+    "main.js": "/portfolioSite/static/js/main.73c2d800.js",
+    "static/js/787.38f16daf.chunk.js": "/portfolioSite/static/js/787.38f16daf.chunk.js",
+    "static/media/e.png": "/portfolioSite/static/media/e.d8e9a9289dcc76d931b9.png",
+    "static/media/m.png": "/portfolioSite/static/media/m.167c88550478e6f0f85c.png",
+    "static/media/l.png": "/portfolioSite/static/media/l.3549d9e451d7abb96934.png",
+    "static/media/g.png": "/portfolioSite/static/media/g.c189f147f5f1860dd4c5.png",
+    "static/media/b.png": "/portfolioSite/static/media/b.b1dc9eeb13b9837cea03.png",
+    "static/media/a.png": "/portfolioSite/static/media/a.b18bb7da7e0da1b12998.png",
+    "static/media/d.png": "/portfolioSite/static/media/d.e33b881cd42a867cae10.png",
+    "static/media/c.png": "/portfolioSite/static/media/c.c8780b30f9b07ee38c16.png",
+    "static/media/n.png": "/portfolioSite/static/media/n.ec5c594f3e7a8f66863e.png",
+    "static/media/k.png": "/portfolioSite/static/media/k.02e16df6861464872846.png",
+    "static/media/myImg.jpeg": "/portfolioSite/static/media/myImg.a6c40d038b6102354ca1.jpeg",
+    "static/media/o.png": "/portfolioSite/static/media/o.20adfb35ae6a6e5817bf.png",
+    "static/media/h.png": "/portfolioSite/static/media/h.842ef02b41f2b4a40201.png",
+    "static/media/f.png": "/portfolioSite/static/media/f.bbbbbabc8c191bfb99bf.png",
+    "static/media/i.png": "/portfolioSite/static/media/i.0c5480e2c32b58686139.png",
+    "static/media/j.svg": "/portfolioSite/static/media/j.97cc17cce9e896ef1405.svg",
+    "index.html": "/portfolioSite/index.html",
+    "main.526d6a98.css.map": "/portfolioSite/static/css/main.526d6a98.css.map",
+    "main.73c2d800.js.map": "/portfolioSite/static/js/main.73c2d800.js.map",
+    "787.38f16daf.chunk.js.map": "/portfolioSite/static/js/787.38f16daf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e974f69.css",
-    "static/js/main.1cf8cc29.js"
+    "static/css/main.526d6a98.css",
+    "static/js/main.73c2d800.js"
   ]
 }
